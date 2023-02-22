@@ -1,0 +1,9 @@
+.products-container {
+  width: 85%;
+  max-width: 1200px;
+  margin: 4rem auto 2rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

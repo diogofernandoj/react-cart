@@ -1,0 +1,58 @@
+.cart-container {
+  position: fixed;
+  inset: 0;
+  background-color: #2226;
+}
+.cart-container .fa-xmark {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.5rem;
+  color: #777;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cart-container .fa-xmark:hover {
+  color: #222;
+}
+
+.cart {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  color: #000;
+  position: absolute;
+  right: 0;
+  padding: 2rem;
+  box-shadow: -0.6rem 0 0.6rem #0006;
+}
+.cart .cart-items {
+  height: max-content;
+  max-height: 90%;
+  overflow-y: auto;
+}
+.cart .total-price {
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.cart .empty-cart {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  text-align: center;
+  color: #444;
+}
+.cart-container.active .cart {
+  animation: cart 0.2s;
+}
+@keyframes cart {
+  from {
+    opacity: 0;
+    right: -500px;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}

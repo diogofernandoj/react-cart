@@ -1,0 +1,26 @@
+.product-item {
+  height: 300px;
+  width: 250px;
+}
+.product-item img {
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+.product-item .info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #222;
+}
+.product-item button {
+  width: 100%;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.4rem;
+  cursor: pointer;
+}
