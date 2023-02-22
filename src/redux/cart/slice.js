@@ -9,7 +9,6 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addProductToCart: (state, action) => {
-      console.log(action);
       const alreadyInCart = state.products.some((item) => item.id == action.payload.id);
 
       if (alreadyInCart) {
